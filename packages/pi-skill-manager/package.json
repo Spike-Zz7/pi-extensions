@@ -1,0 +1,24 @@
+{
+  "name": "pi-skill-manager",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Pi extension for batch-managing automatic Skill invocation and custom groups",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "skills",
+    "skill-manager"
+  ],
+  "scripts": {
+    "test": "node --test *.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

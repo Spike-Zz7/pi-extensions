@@ -1,0 +1,33 @@
+{
+  "name": "pi-extensions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo of Pi Coding Agent extensions by Eryx-Z",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "pi": {
+    "extensions": [
+      "./packages/model-aware-autocompact/index.ts",
+      "./packages/pi-multi-account/index.ts",
+      "./packages/pi-open-terminal/index.ts",
+      "./packages/pi-skill-manager/index.ts",
+      "./packages/pi-status-hub/src/index.ts",
+      "./packages/pi-sync/dist/index.ts",
+      "./packages/pi-token-usage/src/index.ts"
+    ]
+  },
+  "scripts": {
+    "build": "npm --workspaces --if-present run build",
+    "test": "npm --workspaces --if-present run test",
+    "typecheck": "npm --workspaces --if-present run typecheck"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^0.85.1",
+    "@earendil-works/pi-coding-agent": "^0.85.1",
+    "@earendil-works/pi-tui": "^0.85.1",
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.0"
+  }
+}

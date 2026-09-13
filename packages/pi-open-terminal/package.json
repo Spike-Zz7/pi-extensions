@@ -1,0 +1,21 @@
+{
+  "name": "pi-open-terminal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Open a new Kitty terminal in Pi's current working directory with /d",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "terminal",
+    "kitty"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

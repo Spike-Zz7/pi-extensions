@@ -1,0 +1,20 @@
+{
+  "name": "model-aware-autocompact",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Model-aware automatic context compaction for Pi",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "autocompact"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
